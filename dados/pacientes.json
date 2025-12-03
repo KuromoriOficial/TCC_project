@@ -4,5 +4,11 @@
     "idade": 19,
     "telefone": "(11) 98895-1193",
     "user": "Andre"
+  },
+  {
+    "nome": "Carlos teste",
+    "idade": 0,
+    "telefone": "Não informado",
+    "user": "Carlos"
   }
 ]

@@ -16,5 +16,17 @@
     "password": "",
     "role": "paciente",
     "name": ""
+  },
+  {
+    "username": "Carlos",
+    "password": "151515",
+    "role": "paciente",
+    "name": "Carlos teste"
+  },
+  {
+    "username": "pedro",
+    "password": "101010",
+    "role": "medico",
+    "name": "Pedro Sanches"
   }
 ]

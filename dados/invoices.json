@@ -1,1 +1,220 @@
-[]
+[
+  {
+    "id": 1,
+    "patient_user": "Andre",
+    "total": 5000.0,
+    "parcels": [
+      {
+        "number": 1,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 2,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 3,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 4,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 5,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 6,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 7,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 8,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 9,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 10,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 11,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 12,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 13,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 14,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 15,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 16,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 17,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 18,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 19,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 20,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 21,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 22,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 23,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 24,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 25,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 26,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 27,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 28,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 29,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 30,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 31,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 32,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 33,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 34,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 35,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 36,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 37,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 38,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 39,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 40,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 41,
+        "amount": 119.05,
+        "paid": false
+      },
+      {
+        "number": 42,
+        "amount": 118.95,
+        "paid": false
+      }
+    ],
+    "created_at": "2025-12-02 22:39:27"
+  }
+]

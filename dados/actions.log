@@ -38,3 +38,18 @@
 [2025-12-02 22:04:50] Usuário criado:  (paciente)
 [2025-12-02 22:04:50] Paciente criado e vinculado ao user 
 [2025-12-02 22:05:18] Gestão removeu paciente 
+[2025-12-02 22:27:00] Fatura criada ID 1 para andre
+[2025-12-02 22:27:20] Login: Andre role=paciente
+[2025-12-02 22:34:03] Login: Andre role=paciente
+[2025-12-02 22:34:33] Login: admin role=gestao
+[2025-12-02 22:38:37] Usuário criado: Carlos (paciente)
+[2025-12-02 22:38:37] Paciente criado e vinculado ao user Carlos
+[2025-12-02 22:39:09] Gestão removeu fatura 1
+[2025-12-02 22:39:27] Gestão criou fatura 1 para Andre
+[2025-12-02 22:45:07] Login: admin role=gestao
+[2025-12-02 22:45:10] Gestão visualizou código de autorização
+[2025-12-02 22:46:04] Usuário criado: pedro (medico)
+[2025-12-02 22:46:30] Login: pedro role=medico
+[2025-12-02 23:05:31] Login: admin role=gestao
+[2025-12-02 23:08:50] Login: Andre role=paciente
+[2025-12-02 23:09:20] Agendamento criado ID 2 paciente Andre médico pedro

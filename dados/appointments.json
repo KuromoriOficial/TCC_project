@@ -7,5 +7,14 @@
     "datetime": "2025-12-12 14:29",
     "status": "cancelado",
     "notes": ""
+  },
+  {
+    "id": 2,
+    "patient_user": "Andre",
+    "patient_name": "Andre. T",
+    "doctor_user": "pedro",
+    "datetime": "2025-12-12 14:55",
+    "status": "agendado",
+    "notes": ""
   }
 ]
