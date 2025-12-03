@@ -1,0 +1,40 @@
+[2025-11-23 11:44:55] Dados salvos em dados\pacientes.json
+[2025-11-23 11:44:55] Inseridos dados de exemplo
+[2025-11-23 11:45:22] Dados salvos em dados\pacientes.json
+[2025-11-23 11:45:22] Cadastro: Carlinhos Maia | Tel: (11) 98895-1193
+[2025-11-23 11:46:10] Dados salvos em dados\pacientes.json
+[2025-11-23 11:46:10] Inseridos dados de exemplo
+[2025-11-23 11:47:06] Dados salvos em dados\pacientes.json
+[2025-11-23 11:47:06] Cadastro: Jair Bolsonaro | Tel: (22) 98545-2256
+[2025-11-23 14:18:10] Dados salvos em dados\pacientes.json
+[2025-11-23 14:18:10] Cadastro: Cola Pinto | Tel: (11) 9889-5193
+[2025-12-02 21:09:28] Usuarios salvos
+[2025-12-02 21:10:08] Usuarios salvos
+[2025-12-02 21:10:08] Usuário criado: Carlos (paciente)
+[2025-12-02 21:10:53] Login: Carlos as paciente
+[2025-12-02 21:21:15] Agendamentos salvos
+[2025-12-02 21:21:15] Agendamento criado: ID 1 para carlos penis
+[2025-12-02 21:29:20] Dados pacientes salvos
+[2025-12-02 21:29:20] Alterado cadastro: João Silva
+[2025-12-02 21:32:12] Usuarios salvos
+[2025-12-02 21:32:12] Usuário criado: ROBERTO (medico)
+[2025-12-02 21:32:23] Login: ROBERTO as medico
+[2025-12-02 21:33:37] Login: admin as gestao
+[2025-12-02 21:36:55] Usuário gestor padrão criado (admin/admin)
+[2025-12-02 21:37:24] Usuário criado: Andre (paciente)
+[2025-12-02 21:37:24] Paciente criado e vinculado ao user Andre
+[2025-12-02 21:37:39] Login: Andre as paciente
+[2025-12-02 21:38:21] Agendamento criado: ID 1 para Andre. T
+[2025-12-02 21:41:06] Login: Andre as paciente
+[2025-12-02 21:41:58] Paciente Andre editou agendamento 1
+[2025-12-02 21:42:15] Paciente Andre cancelou agendamento 1
+[2025-12-02 21:42:27] Paciente Andre cancelou agendamento 1
+[2025-12-02 21:42:40] Paciente Andre cancelou agendamento 1
+[2025-12-02 21:43:55] Paciente Andre alterou seu cadastro
+[2025-12-02 21:59:27] Login: Andre role=paciente
+[2025-12-02 22:00:38] Notificação criada por tentativa: Carlos / Carlos Bruno Dantas -> Solicitando código
+[2025-12-02 22:00:48] Login: admin role=gestao
+[2025-12-02 22:01:32] Gestão visualizou código de autorização
+[2025-12-02 22:04:50] Usuário criado:  (paciente)
+[2025-12-02 22:04:50] Paciente criado e vinculado ao user 
+[2025-12-02 22:05:18] Gestão removeu paciente 
