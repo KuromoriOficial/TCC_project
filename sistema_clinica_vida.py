@@ -3,12 +3,6 @@
 """
 Clínica Vida+ — Versão com mensagens padronizadas e limpeza de duplicatas
 Objetivos desta versão:
-- Mensagens de aviso/ação padronizadas e claras
-- Confirmações unificadas (S/N)
-- Opção universal '0' como voltar/sair em menus
-- Seleção por número para médicos/pacientes mantida
-- Remoção de duplicatas/aliases óbvias e pequenas limpezas
-Arquivos em dados/: users.json, pacientes.json, appointments.json, invoices.json, notifications.json, actions.log
 """
 import os, json, csv, re, difflib
 from datetime import datetime
@@ -168,7 +162,7 @@ def find_user(username):
 
 def criar_usuario(role, username=None, password=None, name=None, skip_auth=False):
     reload_all()
-    msg_info(f"Cadastro de '{role}' em andamento. Digite o Nome/login abaixo! \nDigite 0 abaixo caso deseja cancelar o cadastro.")
+    msg_info(f"Cadastro de '{role}' em andamento. Digite o Nome/login abaixo! \n\nDigite 0 abaixo caso deseja cancelar o cadastro.")
     if username is None:
         username = input("Username: ").strip()
         if username == "0": 
@@ -240,7 +234,7 @@ def patient_view_own(user):
     print(f" Telefone: {p.get('telefone')}")
     print(f" Username vinculado: {p.get('user')}")
 
-def listar_todos_pacientes_compacto():
+def lists_tds():
     reload_all()
     if not patients:
         msg_info("Nenhum paciente cadastrado.")
@@ -614,14 +608,14 @@ def avaliar_regras(A: bool, B: bool, C: bool, D: bool):
 def bool_to_vf(b): return "V" if b else "F"
 
 def tabela_verdade_consulta():
-    print("\nTabela Verdade — CONSULTA NORMAL (A B C D | Res)")
+    print("\nTabela Verdade - CONSULTA NORMAL \n(A B C D | Res)")
     for n in range(16):
         A = bool(n & 8); B = bool(n & 4); C = bool(n & 2); D = bool(n & 1)
         res, _ = avaliar_regras(A,B,C,D)
         print(f"{bool_to_vf(A)} {bool_to_vf(B)} {bool_to_vf(C)} {bool_to_vf(D)} | {bool_to_vf(res)}")
 
 def tabela_verdade_emergencia():
-    print("\nTabela Verdade — EMERGÊNCIA (A B C D | Res)")
+    print("\nTabela Verdade — EMERGÊNCIA \n(A B C D | Res)")
     for n in range(16):
         A = bool(n & 8); B = bool(n & 4); C = bool(n & 2); D = bool(n & 1)
         _, res = avaliar_regras(A,B,C,D)
@@ -636,7 +630,7 @@ def contar_situacoes_regra():
 def testar_caso_pratico():
     A=False; B=True; C=True; D=False
     cons, emerg = avaliar_regras(A,B,C,D)
-    msg_info("Caso prático: A=F B=V C=V D=F")
+    msg_info("Caso prático: \nA=F B=V C=V D=F")
     print(f" Consulta Normal: {bool_to_vf(cons)} -> {'ATENDE' if cons else 'NÃO ATENDE'}")
     print(f" Emergência: {bool_to_vf(emerg)} -> {'ATENDE' if emerg else 'NÃO ATENDE'}")
 
@@ -697,7 +691,7 @@ def medico_create_hub():
     while True:
         print("\n--- Criação de conta (Médico) ---")
         print("\n1. Inserir código de autorização")
-        print("2. Notificar a gestão (envia aviso, não cria o usuário automaticamente)")
+        print("2. Notificar a gestão (envia aviso a gestão para enviar o código de autorização)")
         print("0. Voltar")
         opt = input("Escolha: ").strip()
         if opt == "1":
@@ -716,7 +710,7 @@ def medico_create_hub():
             if name == "0": continue
             criar_usuario("medico", username=username, password=password, name=name, skip_auth=True)
         elif opt == "2":
-            attempted_username = input("Username desejado: ").strip()
+            attempted_username = input("Digite seu primeiro nome: ").strip()
             if attempted_username == "0": continue
             attempted_name = input("Nome completo: ").strip()
             if attempted_name == "0": continue
@@ -790,7 +784,7 @@ def hub_medico(user):
         elif op == "3":
             medico_consultar_faturas()
         elif op == "4":
-            listar_todos_pacientes_compacto()
+            lists_tds()
         elif op == "0":
             break
         else:
@@ -828,7 +822,7 @@ def admin_crud_patients():
         print("0. Voltar")
         op = input("Escolha: ").strip()
         if op == "1":
-            listar_todos_pacientes_compacto()
+            lists_tds()
         elif op == "2":
             nome = input("Nome: ").strip()
             if nome == "0": msg_warn("Operação cancelada."); continue
@@ -840,7 +834,7 @@ def admin_crud_patients():
             if userlink: p["user"] = userlink
             patients.append(p); save_json(PATIENTS_FILE, patients); log_action(f"Gestão criou paciente {nome}"); msg_success("Paciente criado.")
         elif op == "3":
-            listar_todos_pacientes_compacto(); idx = input("Número do paciente editar (ou 0 voltar): ").strip()
+            lists_tds(); idx = input("Número do paciente editar (ou 0 voltar): ").strip()
             if idx == "0": continue
             try:
                 i = int(idx)-1; p = patients[i]
@@ -851,7 +845,7 @@ def admin_crud_patients():
             p['user'] = input(f"Username vinculado [{p.get('user','')}]: ").strip() or p.get('user')
             save_json(PATIENTS_FILE, patients); log_action(f"Gestão editou paciente {p['nome']}"); msg_success("Paciente atualizado.")
         elif op == "4":
-            listar_todos_pacientes_compacto(); idx = input("Número do paciente remover (ou 0 voltar): ").strip()
+            lists_tds(); idx = input("Número do paciente remover (ou 0 voltar): ").strip()
             if idx == "0": continue
             try:
                 i = int(idx)-1; p = patients.pop(i); save_json(PATIENTS_FILE, patients); log_action(f"Gestão removeu paciente {p['nome']}"); msg_success("Removido.")
@@ -896,7 +890,7 @@ def hub_gestao(user):
         print("7. Ver agendamentos")
         print("8. Export CSV / Relatório")
         print("9. Inserir dados de exemplo")
-        print("10.1 Lógica booleana / Tabelas")
+        print("10. Lógica booleana / Tabelas")
         print("11. Simular fila")
         print("12. Ver logs (últimas linhas)")
         print("0. Sair")
@@ -931,7 +925,7 @@ def hub_gestao(user):
             ]
             patients.extend(exemplos); save_json(PATIENTS_FILE, patients); log_action("Inseridos dados exemplo pelo gestor"); msg_success("Dados de exemplo inseridos.")
         elif op == "10":
-            print("1. Tabela Consulta Normal | 2. Tabela Emergência | 3. Contagem | 4. Caso prático | 0 Voltar")
+            print("\n1. Tabela Consulta Normal \n2. Tabela Emergência \n3. Contagem \n4. Caso prático \n0 Voltar")
             opc = input("Escolha: ").strip()
             if opc == "1": tabela_verdade_consulta()
             elif opc == "2": tabela_verdade_emergencia()

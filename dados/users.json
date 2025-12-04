@@ -28,5 +28,11 @@
     "password": "101010",
     "role": "medico",
     "name": "Pedro Sanches"
+  },
+  {
+    "username": "Eduardo",
+    "password": "101010",
+    "role": "paciente",
+    "name": "Eduardo Cordeiro"
   }
 ]

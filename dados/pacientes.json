@@ -10,5 +10,11 @@
     "idade": 0,
     "telefone": "Não informado",
     "user": "Carlos"
+  },
+  {
+    "nome": "Eduardo Cordeiro",
+    "idade": 0,
+    "telefone": "Não informado",
+    "user": "Eduardo"
   }
 ]
