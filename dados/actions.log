@@ -71,3 +71,9 @@ Username: admin role=gestao
 Username: admin role=gestao
 [2025-12-03 21:17:04] 
 Username: admin role=gestao
+[2025-12-03 23:55:41] 
+Username: admin role=gestao
+[2025-12-03 23:57:29] Usuário criado: Roberto (paciente)
+[2025-12-03 23:57:29] Paciente criado e vinculado ao user Roberto
+[2025-12-03 23:57:39] 
+Username: Roberto role=paciente

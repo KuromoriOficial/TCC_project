@@ -239,7 +239,7 @@ def lists_tds():
     if not patients:
         msg_info("Nenhum paciente cadastrado.")
         return
-    print("\nLista de pacientes (número | nome | idade | telefone | username):")
+    print("\nLista de pacientes \n(número | nome | idade | telefone | username):")
     for i, p in enumerate(patients, start=1):
         print(f" {i}. {p.get('nome')} | {p.get('idade')} | {p.get('telefone')} | {p.get('user','-')}")
 
